@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Roweena's portfolio — Big Data Analytics, Python, SQL, data analysis and web projects.">
+  <title>Roweena | Data Analytics Portfolio</title>
+  <style>
+    :root { --bg:#0b1020; --panel:#121a2f; --text:#f5f7ff; --muted:#b7c1d8; --accent:#79e0d1; --line:#26324d; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; font-family:Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background:var(--bg); color:var(--text); line-height:1.6; }
+    a { color:inherit; }
+    .wrap { width:min(1080px, 90%); margin:auto; }
+    header { position:sticky; top:0; background:rgba(11,16,32,.92); backdrop-filter:blur(12px); border-bottom:1px solid var(--line); z-index:2; }
+    nav { min-height:70px; display:flex; justify-content:space-between; align-items:center; gap:18px; }
+    .brand { font-weight:800; letter-spacing:.4px; color:var(--accent); text-decoration:none; }
+    nav .links { display:flex; flex-wrap:wrap; gap:18px; }
+    nav .links a { text-decoration:none; color:var(--muted); font-size:.94rem; }
+    nav .links a:hover { color:var(--accent); }
+    .hero { padding:100px 0 84px; display:grid; grid-template-columns:1.5fr .8fr; gap:48px; align-items:center; }
+    .eyebrow { color:var(--accent); font-weight:700; text-transform:uppercase; letter-spacing:2px; font-size:.8rem; }
+    h1 { font-size:clamp(2.6rem, 6vw, 4.8rem); line-height:1.06; margin:14px 0 20px; letter-spacing:-2px; }
+    h1 span { color:var(--accent); }
+    .intro { max-width:650px; color:var(--muted); font-size:1.12rem; }
+    .actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:28px; }
+    .btn { display:inline-block; padding:11px 17px; border-radius:10px; text-decoration:none; font-weight:750; border:1px solid var(--accent); }
+    .primary { background:var(--accent); color:#08111d; }
+    .secondary { color:var(--accent); }
+    .hero-card { padding:28px; background:linear-gradient(145deg,#182440,#101729); border:1px solid var(--line); border-radius:22px; box-shadow:0 24px 70px #0003; }
+    .hero-card .monogram { font-size:4.5rem; line-height:1.1; font-weight:900; color:var(--accent); }
+    .hero-card p { color:var(--muted); }
+    section { padding:64px 0; border-top:1px solid var(--line); }
+    .section-label { color:var(--accent); font-size:.8rem; text-transform:uppercase; letter-spacing:2px; font-weight:800; }
+    h2 { margin:8px 0 22px; font-size:clamp(1.8rem,4vw,2.5rem); }
+    .muted { color:var(--muted); }
+    .skills { display:flex; flex-wrap:wrap; gap:10px; margin-top:22px; }
+    .chip { border:1px solid var(--line); background:var(--panel); padding:8px 13px; border-radius:999px; color:#dce5fa; font-size:.93rem; }
+    .grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; }
+    .project { background:var(--panel); border:1px solid var(--line); border-radius:16px; padding:24px; }
+    .project h3 { margin:0 0 8px; }
+    .project p { color:var(--muted); }
+    .project .tags { color:var(--accent); font-size:.88rem; }
+    .project a { display:inline-block; margin-top:10px; color:var(--accent); font-weight:700; text-decoration:none; }
+    .contact-box { padding:28px; border:1px solid var(--line); border-radius:18px; background:var(--panel); }
+    footer { padding:28px 0 40px; color:var(--muted); font-size:.9rem; }
+    @media (max-width:720px) {
+      nav { padding:14px 0; align-items:flex-start; flex-direction:column; }
+      .hero { grid-template-columns:1fr; padding:68px 0; }
+      .grid { grid-template-columns:1fr; }
+      h1 { letter-spacing:-1px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="wrap">
+      <a class="brand" href="#home">ROWEENA.</a>
+      <div class="links">
+        <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="wrap hero" id="home">
+      <div>
+        <div class="eyebrow">Big Data Analytics • Aspiring Data Analyst</div>
+        <h1>Hi, I'm <span>Roweena.</span></h1>
+        <p class="intro">I’m a Computer Science student specializing in Big Data Analytics. I enjoy turning data into useful insights and building practical projects with Python, SQL, analytics, and web technologies.</p>
+        <div class="actions">
+          <a class="btn primary" href="#projects">Explore my projects</a>
+          <a class="btn secondary" href="#contact">Get in touch</a>
+        </div>
+      </div>
+      <aside class="hero-card">
+        <div class="monogram">R.</div>
+        <h3>Curious mind. Data-driven solutions.</h3>
+        <p>Interested in data analytics, machine learning, dashboards, and software development.</p>
+        <p><strong>Currently:</strong> Building projects and preparing for graduate opportunities.</p>
+      </aside>
+    </div>
+
+    <section id="about">
+      <div class="wrap">
+        <div class="section-label">A little about me</div>
+        <h2>Turning questions into insights.</h2>
+        <p class="muted">I’m pursuing Computer Science with a specialization in Big Data Analytics. Through academic and personal projects, I’m developing skills in data preparation, analysis, visualization, and building user-friendly applications. I’m eager to keep learning, collaborate with teams, and solve real-world problems.</p>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="wrap">
+        <div class="section-label">What I work with</div>
+        <h2>Skills & tools</h2>
+        <p class="muted">Update this list to reflect the technologies you can confidently discuss in an interview.</p>
+        <div class="skills">
+          <span class="chip">Python</span><span class="chip">SQL</span><span class="chip">Pandas</span>
+          <span class="chip">Data Analysis</span><span class="chip">Data Visualization</span><span class="chip">Streamlit</span>
+          <span class="chip">Machine Learning</span><span class="chip">HTML</span><span class="chip">CSS</span>
+          <span class="chip">MySQL</span><span class="chip">Git & GitHub</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="wrap">
+        <div class="section-label">Selected work</div>
+        <h2>Projects</h2>
+        <div class="grid">
+          <article class="project">
+            <h3>Voicify — Voice-Enabled Sentiment Analysis</h3>
+            <p>An e-commerce review analysis concept that explores sentiment classification and voice-enabled interaction to help users understand customer feedback.</p>
+            <div class="tags">Python · NLP · Sentiment Analysis</div>
+            <a href="https://github.com/roweena123" target="_blank" rel="noreferrer">View GitHub profile ↗</a>
+          </article>
+          <article class="project">
+            <h3>Student Performance Dashboard</h3>
+            <p>An interactive dashboard concept for exploring student performance data and presenting key patterns in an accessible visual format.</p>
+            <div class="tags">Python · Streamlit · Data Visualization</div>
+            <a href="https://github.com/roweena123" target="_blank" rel="noreferrer">View GitHub profile ↗</a>
+          </article>
+          <article class="project">
+            <h3>Meat Quality & Antibiotic Analytics</h3>
+            <p>A data analytics dashboard project focused on exploring meat quality and antibiotic-related data with charts and database support.</p>
+            <div class="tags">Python · Matplotlib · MySQL</div>
+            <a href="https://github.com/roweena123" target="_blank" rel="noreferrer">View GitHub profile ↗</a>
+          </article>
+          <article class="project">
+            <h3>Gadget Resale Price Prediction</h3>
+            <p>A machine learning project concept for estimating resale prices from gadget features and presenting a useful prediction workflow.</p>
+            <div class="tags">Python · Machine Learning · Regression</div>
+            <a href="https://github.com/roweena123" target="_blank" rel="noreferrer">View GitHub profile ↗</a>
+          </article>
+        </div>
+        <p class="muted" style="margin-top:18px">Before sharing, replace the general GitHub links with each project's repository URL and verify that the descriptions match your finished work.</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrap">
+        <div class="section-label">Let's connect</div>
+        <h2>Have an opportunity or idea?</h2>
+        <div class="contact-box">
+          <p class="muted">I’m open to connecting about entry-level opportunities, internships, data projects, and collaboration.</p>
+          <div class="actions">
+            <!-- Replace YOUR-LINKEDIN-USERNAME with your real LinkedIn profile URL -->
+            <a class="btn primary" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="btn secondary" href="https://github.com/roweena123" target="_blank" rel="noreferrer">GitHub</a>
+            <!-- Add your email or a public resume link here when ready -->
+          </div>
+          <p class="muted"><small>Personalize this section with your actual LinkedIn profile, professional email, and resume link before publishing.</small></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="wrap">© 2026 Roweena · Built with HTML & CSS</div></footer>
+</body>
+</html>
